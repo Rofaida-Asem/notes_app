@@ -20,14 +20,14 @@ class NoteItem extends StatelessWidget {
               contentPadding: EdgeInsets.all(0),
               title: Text(
                 'Flutter tips',
-                style: TextStyle(color: Colors.black, fontSize: 24),
+                style: TextStyle(color: Colors.black, fontSize: 26),
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.only(top: 16),
                 child: Text(
                   'Build your Career with Tharwat Samy',
                   style: TextStyle(
-                      color: Colors.black.withAlpha(128), fontSize: 16),
+                      color: Colors.black.withAlpha(128), fontSize: 18),
                 ),
               ),
               trailing: IconButton(
