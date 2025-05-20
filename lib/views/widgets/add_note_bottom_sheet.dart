@@ -20,7 +20,7 @@ class AddNoteBottomSheet extends StatelessWidget {
           if (state is AddNoteFailure) {
             print('faield ${state.errMessage}');
           }
-          if (state is AddNotesuccess) {
+          if (state is AddNoteSuccess) {
             Navigator.pop(context);
           }
         },
