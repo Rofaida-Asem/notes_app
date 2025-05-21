@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:notes_app/cubit/add_note_cubit/add_note_cubit.dart';
 import 'package:notes_app/models/note_model.dart';
+import 'package:notes_app/views/widgets/colors_list_view.dart';
 import 'package:notes_app/views/widgets/custom_botton.dart';
 import 'package:notes_app/views/widgets/custom_text_field.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -49,6 +50,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               maxLines: 5,
             ),
           ),
+          ColorsListView(),
           Padding(
             padding: EdgeInsets.only(top: 40.0, bottom: 40),
             child: BlocBuilder<AddNoteCubit, AddNoteState>(
