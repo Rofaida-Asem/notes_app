@@ -50,6 +50,9 @@ class _AddNoteFormState extends State<AddNoteForm> {
               maxLines: 5,
             ),
           ),
+          const SizedBox(
+            height: 16,
+          ),
           ColorsListView(),
           Padding(
             padding: EdgeInsets.only(top: 40.0, bottom: 40),
