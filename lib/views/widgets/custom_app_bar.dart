@@ -6,8 +6,9 @@ class CustomAppBar extends StatelessWidget {
     super.key,
     required this.title,
     required this.icon,
+    this.onPressed,
   });
-
+  final void Function()? onPressed;
   final String title;
   final IconData icon;
 
@@ -22,7 +23,8 @@ class CustomAppBar extends StatelessWidget {
           ),
         ),
         Spacer(),
-        CustomSearchIcon(
+        CustomIcon.CustomIcon(
+          onPressed: onPressed,
           icon: icon,
         ),
       ],
